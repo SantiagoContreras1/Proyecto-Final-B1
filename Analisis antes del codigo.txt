@@ -1,0 +1,105 @@
+La lógica de compra debe estar en FacturaController, dentro de POST /comprar
+Carro no maneja compras, solo almacena productos antes de comprar.
+POST /comprar debe validar stock, restarlo del inventario, generar la factura y vaciar el carrito.
+
+
+
+
+Users:
+	username
+	email
+	password
+	compras: [] Array de facturas
+	role [ADMIN][CLIENT]
+	estado
+REGISTER-LOGIN   GET     EDITAR(CLIENT => ADMIN solo los admins)
+EDITAR(OPCIONES SOLO PARA CLIENTS)    DELETE
+
+
+
+
+Product:
+	name
+	description
+	Price
+	stock
+	category
+	ventas
+	estado
+
+POST GET SEARCH PUT DELETE(Solo admins)
+*****FUNCIONES******
+GET de productos más vendidos. Filtrar por key ventas en el modelo, ahí, ordenar de mayor a menor
+
+
+
+
+Factura:
+	user: referencia a object user
+	productos: [{product, cantidad}]
+
+GET SEARCH(Por user) POST(Al hacer la compra, hacer el post)
+**En el controller de factura se generarán las compras, en el carrito solo se      enlistan
+
+
+
+1) Obtener el carrito del user / Si está vacio, return error
+2) Verificar el stock de cada producto en el carrito / Si no hay, return error
+3) Restar del inventario la cantidad comprada, Actualizar cantidad en Product
+4) Crear la factura
+5) Asignar la factura al usuario, Guardarla en user.compras
+6) Vaciar el carrito, Eliminar el contenido del carrito para ese usuario
+
+
+
+
+
+
+
+
+
+
+Category:
+	name
+	description
+	products: []
+	estado
+POST GET UPDATE DELETE
+Si se elimina la category, asignar los productos a una categoría automáticamente
+	CATEGORIA DE ELIMINADOS: NoCategory
+***FUNCIONES PARA ADMINS****
+**FUNCIONES**
+El search, deberá mostrar los productos de esa categoría
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Carro:
+	user: Referencia a objeto
+	products:[]
+	total: Campo Virtual
+POST(Mandar el id del producto, id del user)
+
+
+
+** Se hará un endpoint para /agregarAlCarro/ y otro para /comprar/
+** A la hora de llamara al /comprar/, se debe: 
+		- Ver si hay existencias
+		- Restar la cantidad comprada, del inventario
+		- Agregar la factura al user

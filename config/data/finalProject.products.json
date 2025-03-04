@@ -1,0 +1,195 @@
+[{
+  "_id": {
+    "$oid": "67c36755df8d0872da7d4df8"
+  },
+  "name": "Pasta Dental",
+  "description": "Pasta para los dientes.",
+  "price": 25.5,
+  "stock": 1,
+  "category": {
+    "$oid": "67c3571026959dbed5a78a95"
+  },
+  "ventas": 55,
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c3689bdf8d0872da7d4e03"
+  },
+  "name": "Samsung A33",
+  "description": "Celu Samsung A33 que bonito el A33.",
+  "price": 3000.5,
+  "stock": 1,
+  "category": {
+    "$oid": "67c3571026959dbed5a78a95"
+  },
+  "ventas": 33,
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c3695cf3a6ed39cf04ec09"
+  },
+  "name": "Cepillo Dental",
+  "description": "Cepillo para los dientes.",
+  "price": 5.5,
+  "stock": 1000,
+  "category": {
+    "$oid": "67c3571026959dbed5a78a95"
+  },
+  "ventas": 3100,
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c36c986bb0a392e32f3ecd"
+  },
+  "name": "Hilo Dental",
+  "description": "Hilo para los dientes.",
+  "price": 15.5,
+  "stock": 1,
+  "category": {
+    "$oid": "67c3571026959dbed5a78a95"
+  },
+  "ventas": 100,
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c3860711e847f405925e30"
+  },
+  "name": "Samsung S21 Ultra",
+  "description": "Celu samsung",
+  "price": 4500.5,
+  "stock": 1,
+  "category": {
+    "$oid": "67c352bceb08d3a69b12cf0e"
+  },
+  "ventas": 10,
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c386e011e847f405925e53"
+  },
+  "name": "Samsung A55",
+  "description": "Celu samsung",
+  "price": 2500.5,
+  "stock": 50,
+  "category": {
+    "$oid": "67c352bceb08d3a69b12cf0e"
+  },
+  "ventas": 10,
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c387e17e30b1657f73c78a"
+  },
+  "name": "Xiaomi Mi 11 pro",
+  "description": "Celu xiaomi",
+  "price": 500.5,
+  "stock": 43,
+  "category": {
+    "$oid": "67c352bceb08d3a69b12cf0e"
+  },
+  "ventas": 66,
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c38b5cd4381f34e10bf2ec"
+  },
+  "name": "Xiaomi Mi 11 pro",
+  "description": "Celu xiaomi",
+  "price": 500.5,
+  "stock": 50,
+  "category": {
+    "$oid": "67c352bceb08d3a69b12cf0e"
+  },
+  "ventas": 666,
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c3902cdeb96d5ec1fcdca9"
+  },
+  "name": "Microondas",
+  "description": "Microondas oster.",
+  "price": 500.5,
+  "stock": 1000,
+  "category": {
+    "$oid": "67c38fe7deb96d5ec1fcdca3"
+  },
+  "ventas": 3100,
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c39051deb96d5ec1fcdcb1"
+  },
+  "name": "Refrigeradora",
+  "description": "Una refri oster",
+  "price": 1500.5,
+  "stock": 6,
+  "category": {
+    "$oid": "67c38fe7deb96d5ec1fcdca3"
+  },
+  "ventas": 3,
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c5ee38404a60fb69c8fe8e"
+  },
+  "name": "Laptop DELL",
+  "description": "Laptop DELL core i7",
+  "price": 5500.5,
+  "stock": 5,
+  "category": {
+    "$oid": "67c5edbc404a60fb69c8fe81"
+  },
+  "ventas": 3,
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c6596aac799788c4f8f387"
+  },
+  "name": "Item de pruebaL",
+  "description": "Item de prueba, que descripción queres.",
+  "price": 1,
+  "stock": 60,
+  "category": {
+    "$oid": "67c653f85fb8cf022ec6736c"
+  },
+  "ventas": 1,
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c66292ed126aaa97507b31"
+  },
+  "name": "Item de pruebaL",
+  "description": "Item de prueba, que descripción queres.",
+  "price": 1,
+  "stock": 60,
+  "category": {
+    "$oid": "67c653f85fb8cf022ec6736c"
+  },
+  "ventas": 1,
+  "estado": true,
+  "__v": 0
+}]
