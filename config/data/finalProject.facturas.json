@@ -1,0 +1,182 @@
+[{
+  "_id": {
+    "$oid": "67c63942c608e4665c5a1fa1"
+  },
+  "user": {
+    "$oid": "67c5ee68404a60fb69c8fe97"
+  },
+  "productos": [
+    {
+      "product": {
+        "$oid": "67c5ee38404a60fb69c8fe8e"
+      },
+      "nombre": "Laptop DELL",
+      "precio": 5500.5,
+      "cantidad": 1,
+      "_id": {
+        "$oid": "67c63942c608e4665c5a1fa2"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67c3695cf3a6ed39cf04ec09"
+      },
+      "nombre": "Cepillo Dental",
+      "precio": 5.5,
+      "cantidad": 1,
+      "_id": {
+        "$oid": "67c63942c608e4665c5a1fa3"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67c387e17e30b1657f73c78a"
+      },
+      "nombre": "Xiaomi Mi 11 pro",
+      "precio": 500.5,
+      "cantidad": 1,
+      "_id": {
+        "$oid": "67c63942c608e4665c5a1fa4"
+      }
+    }
+  ],
+  "carrito": {
+    "$oid": "67c5ee96404a60fb69c8fe9d"
+  },
+  "total": 6006.5,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-03T23:20:34.460Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-03T23:20:34.460Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c63d52e46c656d1c6a9fcb"
+  },
+  "user": {
+    "$oid": "67c2ad87d30db955ec2dd4e8"
+  },
+  "productos": [
+    {
+      "product": {
+        "$oid": "67c387e17e30b1657f73c78a"
+      },
+      "nombre": "Xiaomi Mi 11 pro",
+      "precio": 500.5,
+      "cantidad": 6,
+      "_id": {
+        "$oid": "67c63d52e46c656d1c6a9fcc"
+      }
+    }
+  ],
+  "carrito": {
+    "$oid": "67c63bb1e46c656d1c6a9fab"
+  },
+  "total": 3003,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-03T23:37:54.459Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-03T23:37:54.459Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c63eef908a2fd939443b26"
+  },
+  "user": {
+    "$oid": "67c2ad87d30db955ec2dd4e8"
+  },
+  "productos": [
+    {
+      "product": {
+        "$oid": "67c3902cdeb96d5ec1fcdca9"
+      },
+      "nombre": "Microondas",
+      "precio": 500.5,
+      "cantidad": 1,
+      "_id": {
+        "$oid": "67c63eef908a2fd939443b27"
+      }
+    }
+  ],
+  "carrito": {
+    "$oid": "67c63bb1e46c656d1c6a9fab"
+  },
+  "total": 500.5,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-03T23:44:47.614Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-03T23:44:47.614Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c63f1d908a2fd939443b2e"
+  },
+  "user": {
+    "$oid": "67c2ad87d30db955ec2dd4e8"
+  },
+  "productos": [
+    {
+      "product": {
+        "$oid": "67c3902cdeb96d5ec1fcdca9"
+      },
+      "nombre": "Microondas",
+      "precio": 500.5,
+      "cantidad": 1,
+      "_id": {
+        "$oid": "67c63f1d908a2fd939443b2f"
+      }
+    }
+  ],
+  "carrito": {
+    "$oid": "67c63bb1e46c656d1c6a9fab"
+  },
+  "total": 500.5,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-03T23:45:33.484Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-03T23:45:33.484Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c640169cc9ad757a169bba"
+  },
+  "user": {
+    "$oid": "67c2ad87d30db955ec2dd4e8"
+  },
+  "productos": [
+    {
+      "product": {
+        "$oid": "67c3902cdeb96d5ec1fcdca9"
+      },
+      "nombre": "Microondas",
+      "precio": 500.5,
+      "cantidad": 1,
+      "_id": {
+        "$oid": "67c640169cc9ad757a169bbb"
+      }
+    }
+  ],
+  "carrito": {
+    "$oid": "67c63bb1e46c656d1c6a9fab"
+  },
+  "total": 500.5,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-03T23:49:42.790Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-03T23:49:42.790Z"
+  }
+}]

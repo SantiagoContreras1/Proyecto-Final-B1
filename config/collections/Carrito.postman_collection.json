@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "8770ed10-d99a-4af2-b748-8227621e1a20",
+		"name": "Carrito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42040033"
+	},
+	"item": [
+		{
+			"name": "Agregar al Carrito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDEwMjgyMTUsImV4cCI6MTc0MTA0NjIxNX0.1po63SEVY0psOAcZn6aLZwQFH6ggoD_C7Ou66H8Us8A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\":\"67c2ad87d30db955ec2dd4e8\",\r\n  \"productID\":\"67c3902cdeb96d5ec1fcdca9\",\r\n  \"cantidad\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/carrito/addToCar/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"carrito",
+						"addToCar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "67c2ad87d30db955ec2dd4e8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/carrito/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"carrito",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Car",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "user",
+						"value": "67c5ee68404a60fb69c8fe97",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1ZWU2ODQwNGE2MGZiNjljOGZlOTciLCJpYXQiOjE3NDEwMzExMjMsImV4cCI6MTc0MTA0OTEyM30.8zkGCvnwKR_ctH8hxoLvXEWTqlxyYumWG1XME1sKuY8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/carrito/deleteCar/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"carrito",
+						"deleteCar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar el Carrito",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "user",
+						"value": "67c5ee68404a60fb69c8fe97",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M1ZWU2ODQwNGE2MGZiNjljOGZlOTciLCJpYXQiOjE3NDEwMzExMjMsImV4cCI6MTc0MTA0OTEyM30.8zkGCvnwKR_ctH8hxoLvXEWTqlxyYumWG1XME1sKuY8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productID\":\"67c387e17e30b1657f73c78a\",\r\n  \"cantidad\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/carrito/deleteProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"carrito",
+						"deleteProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar el Carrito",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "user",
+						"value": "67c2ad87d30db955ec2dd4e8",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyYWQ4N2QzMGRiOTU1ZWMyZGQ0ZTgiLCJpYXQiOjE3NDEwNDQ3ODAsImV4cCI6MTc0MTA2Mjc4MH0._oXtlQqwd44MjQh0fJWgSVuAFX_UbefzPmsV3ymozgQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productID\":\"67c387e17e30b1657f73c78a\",\r\n  \"cantidad\":6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/carrito/deleteProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"carrito",
+						"deleteProduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

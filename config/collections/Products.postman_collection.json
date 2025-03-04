@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "387b162d-8269-413e-ad0a-ca6a193b911d",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42040033"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDEwNTEzOTksImV4cCI6MTc0MTA2OTM5OX0.96oyIxzbrGaw3SgdH0988JBFyM-3Fv7xWQTLmEnNLIw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"Item de pruebaL\",\r\n  \"description\":\"Item de prueba, que descripción queres.\",\r\n  \"price\":1,\r\n  \"stock\":60,\r\n  \"category\":\"67c66276ed126aaa97507b29\",\r\n  \"ventas\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/products/save/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"products",
+						"save",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "bestSeller",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDEwNTEzOTksImV4cCI6MTc0MTA2OTM5OX0.96oyIxzbrGaw3SgdH0988JBFyM-3Fv7xWQTLmEnNLIw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/products/search/67c387e17e30b1657f73c78a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"products",
+						"search",
+						"67c387e17e30b1657f73c78a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDA4NTk0NzUsImV4cCI6MTc0MDg3NzQ3NX0._hQDrrdDIFiPHeTZeJV7hNk75WIX8AZc7WPNWeaP_3U",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"confirm\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/products/delete/67c386e011e847f405925e53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"products",
+						"delete",
+						"67c386e011e847f405925e53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDEwNDc5ODQsImV4cCI6MTc0MTA2NTk4NH0.Hn7abgDU_7RPDbldx8EwzqevspW3DU3_InUpZujhbsw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"Microondas\",\r\n  \"description\":\"Microondas oster.\",\r\n  \"price\":500.50,\r\n  \"stock\":1000,\r\n  \"category\":\"67c38fe7deb96d5ec1fcdca3\",\r\n  \"ventas\":3100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/products/update/67c3902cdeb96d5ec1fcdca9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"products",
+						"update",
+						"67c3902cdeb96d5ec1fcdca9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

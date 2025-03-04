@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "67c28a88d450a54b8ba7acb0"
+  },
+  "username": "Pepito",
+  "email": "pepito@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$b3SUV/XGGN8bcr9rpmoxYw$97+NlSMtLDdfsRvNEQyGUF/0y/V/k23BnswcXE0OMQQ",
+  "compras": [],
+  "role": "admin",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28ddcba572a569ba5af3b"
+  },
+  "username": "eazy-e",
+  "email": "eazy@gmail.com",
+  "password": "12345678",
+  "compras": [],
+  "role": "admin",
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c293a330ed0e9c6c37d97e"
+  },
+  "username": "ice cube",
+  "email": "ide@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$HLIVob+M1Gsedu9MEsnuDw$sO4bwaGKRsguiHOWeHtA1Dmth+lB5sV4iXJUQb/ZyuM",
+  "compras": [],
+  "role": "user",
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c293e930ed0e9c6c37d983"
+  },
+  "username": "Dr Dre",
+  "email": "dre@gmail.com",
+  "password": "1234567",
+  "compras": [],
+  "role": "user",
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2a5f7050b594f9ff6964f"
+  },
+  "username": "Borrame porfa",
+  "email": "delete@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$mf2KKiDu5Akp8pUhY2c/Tg$eGPEfTZVOROw6Pq6+z4g4bTHObEku9zpF2H9CYnq7wY",
+  "compras": [],
+  "role": "user",
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2ad4fd30db955ec2dd4e4"
+  },
+  "username": "Manuelas",
+  "email": "manu@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$wDzpVNWwXuGmcrC7pMzAfQ$817klITpTG4efOPeADCTAgnkk+a9tP+0hhFM7MjApW8",
+  "compras": [],
+  "role": "user",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2ad87d30db955ec2dd4e8"
+  },
+  "username": "Luis Nuevo",
+  "email": "luis@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$8CjjKn4G9FnlUe0fwaqvzQ$QN4iXj3FNucb5s5OIxSwlyct6l7l8DA/sqhN/mHM0hU",
+  "compras": [],
+  "role": "admin",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c5ee68404a60fb69c8fe97"
+  },
+  "username": "Mayen Comprador",
+  "email": "mayen@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$mChmr9TE1n6rt6pNIvoDVw$UpWC7y/0K7tx+KzJwqoC9dQd0qJGf6YCGzVecKgpEyE",
+  "compras": [],
+  "role": "user",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c5fadba96fabdc28e58739"
+  },
+  "username": "Cefegod",
+  "email": "cefe@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$nCyja37I9AO5PrBpM0KggQ$hIPrtZKGmli0dEh0Jiv0LP7MVVhvN4DVOA5arsIeGew",
+  "compras": [],
+  "role": "user",
+  "estado": true,
+  "__v": 0
+}]

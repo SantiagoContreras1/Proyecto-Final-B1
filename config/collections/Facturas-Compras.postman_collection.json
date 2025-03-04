@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "32314ed7-320f-4464-a666-5b7234e9254f",
+		"name": "Facturas/Compras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42040033"
+	},
+	"item": [
+		{
+			"name": "Comprar y facturar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userID",
+						"value": "67c2ad87d30db955ec2dd4e8",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyYWQ4N2QzMGRiOTU1ZWMyZGQ0ZTgiLCJpYXQiOjE3NDEwNDQ3ODAsImV4cCI6MTc0MTA2Mjc4MH0._oXtlQqwd44MjQh0fJWgSVuAFX_UbefzPmsV3ymozgQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/facturas/comprar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"facturas",
+						"comprar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Historial de Compras",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userID",
+						"value": "67c2ad87d30db955ec2dd4e8",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyYWQ4N2QzMGRiOTU1ZWMyZGQ0ZTgiLCJpYXQiOjE3NDEwNDQ3ODAsImV4cCI6MTc0MTA2Mjc4MH0._oXtlQqwd44MjQh0fJWgSVuAFX_UbefzPmsV3ymozgQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/facturas/historial/67c2ad87d30db955ec2dd4e8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"facturas",
+						"historial",
+						"67c2ad87d30db955ec2dd4e8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Factura",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDEwNDc5ODQsImV4cCI6MTc0MTA2NTk4NH0.Hn7abgDU_7RPDbldx8EwzqevspW3DU3_InUpZujhbsw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productos\": [\r\n    {\r\n      \"product\": \"67c3902cdeb96d5ec1fcdca9\",\r\n      \"nombre\": \"Microondas\",\r\n      \"precio\": 500.5,\r\n      \"cantidad\": 8\r\n    },\r\n    {\r\n      \"product\": \"67c3695cf3a6ed39cf04ec09\",\r\n      \"nombre\": \"Cepillo Dental\",\r\n      \"precio\": 5.5,\r\n      \"cantidad\": 100\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/facturas/editar/67c640169cc9ad757a169bba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"facturas",
+						"editar",
+						"67c640169cc9ad757a169bba"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
