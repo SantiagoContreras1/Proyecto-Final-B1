@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "3a9e67f6-1daf-4362-ad51-91eef803c5ea",
+		"name": "Categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42040033"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDEwNTEzOTksImV4cCI6MTc0MTA2OTM5OX0.96oyIxzbrGaw3SgdH0988JBFyM-3Fv7xWQTLmEnNLIw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"Categoria de prueba\",\r\n  \"description\":\"Como los probadores de jamon que dan en la maxi despensa. Eso es esta categoria\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/categories/save/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"categories",
+						"save",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/categories/get/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"categories",
+						"get",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDA4NTUwNDAsImV4cCI6MTc0MDg3MzA0MH0.SlwVBHGDdQ2thLXCqMB9cm0s9ewehPYAsLv5YND5Hus",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"Higiene\",\r\n  \"description\":\"Categoria para productos de higiene personal.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/categories/update/67c3571026959dbed5a78a95",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"categories",
+						"update",
+						"67c3571026959dbed5a78a95"
+					],
+					"query": [
+						{
+							"key": "x-token",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyOGE4OGQ0NTBhNTRiOGJhN2FjYjAiLCJpYXQiOjE3NDEwNTEzOTksImV4cCI6MTc0MTA2OTM5OX0.96oyIxzbrGaw3SgdH0988JBFyM-3Fv7xWQTLmEnNLIw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"confirm\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/tiendaOnline/categories/delete/67c66276ed126aaa97507b29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"tiendaOnline",
+						"categories",
+						"delete",
+						"67c66276ed126aaa97507b29"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

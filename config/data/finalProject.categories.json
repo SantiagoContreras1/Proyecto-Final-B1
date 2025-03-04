@@ -1,0 +1,132 @@
+[{
+  "_id": {
+    "$oid": "67c352bceb08d3a69b12cf0e"
+  },
+  "name": "Celulares",
+  "description": "Categoria para celulares modernos.",
+  "products": [
+    {
+      "$oid": "67c3860711e847f405925e30"
+    },
+    {
+      "$oid": "67c3861411e847f405925e36"
+    },
+    {
+      "$oid": "67c386e011e847f405925e53"
+    },
+    {
+      "$oid": "67c387e17e30b1657f73c78a"
+    },
+    {
+      "$oid": "67c38b5cd4381f34e10bf2ec"
+    }
+  ],
+  "estado": true,
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "67c3571026959dbed5a78a95"
+  },
+  "name": "Higiene",
+  "description": "Categoria para productos de higiene personal.",
+  "products": [
+    {
+      "$oid": "67c3695cf3a6ed39cf04ec09"
+    },
+    {
+      "$oid": "67c36c986bb0a392e32f3ecd"
+    }
+  ],
+  "estado": true,
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "67c3575026959dbed5a78a98"
+  },
+  "name": "Carros",
+  "description": "Categoria para todo tipo de automóviles.",
+  "products": [],
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c3608e8d5d056288c3fb1f"
+  },
+  "name": "Mochilas",
+  "description": "Categoria para todo tipo de mochilas.",
+  "products": [],
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c38fe7deb96d5ec1fcdca3"
+  },
+  "name": "Electrodomésticos",
+  "description": "Categoria para todo tipo de electrodomésticos.",
+  "products": [
+    {
+      "$oid": "67c3902cdeb96d5ec1fcdca9"
+    },
+    {
+      "$oid": "67c39051deb96d5ec1fcdcb1"
+    }
+  ],
+  "estado": true,
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "67c5edbc404a60fb69c8fe81"
+  },
+  "name": "Computadoras y componentes",
+  "description": "Categoria para computadoras y componentes para ellas.",
+  "products": [
+    {
+      "$oid": "67c5ee38404a60fb69c8fe8e"
+    }
+  ],
+  "estado": true,
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "67c653f85fb8cf022ec6736c"
+  },
+  "name": "Productos Sin Categoria",
+  "description": "Productos que no tienen categoria",
+  "products": [
+    {
+      "$oid": "67c66292ed126aaa97507b31"
+    }
+  ],
+  "estado": true,
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "67c659fdac799788c4f8f397"
+  },
+  "name": "Categoria de prueba",
+  "description": "Como los probadores de jamon que dan en la maxi despensa. Eso es esta categoria",
+  "products": [],
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c66276ed126aaa97507b29"
+  },
+  "name": "Categoria de prueba",
+  "description": "Como los probadores de jamon que dan en la maxi despensa. Eso es esta categoria",
+  "products": [
+    {
+      "$oid": "67c66292ed126aaa97507b31"
+    }
+  ],
+  "estado": false,
+  "__v": 1
+}]
