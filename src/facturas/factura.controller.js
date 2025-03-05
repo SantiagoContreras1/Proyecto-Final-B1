@@ -113,14 +113,14 @@ export const editarFactura = async (req,res) => {
             })
         }
 
-        // Restaurar stock antes de actualizar (devolver lo comprado)
+        // 1) Restaurar stock antes de actualizar (devolver lo comprado)
         for (const item of factura.productos) {
             await Factura.findByIdAndUpdate(item.product._id, {
                 $inc: { stock: item.cantidad, ventas:-item.cantidad } //Restaurar el stock
             })
         }
 
-        // Verificar si hay suficiente stock para los nuevos productos
+        // 2) Verificar si hay suficiente stock para los nuevos productos
         for (const item of productos) {
             const productDB = await Product.findById(item.product);
 
@@ -137,16 +137,43 @@ export const editarFactura = async (req,res) => {
             }
         }
 
-        // Actualizar la factura
+        // 3) Restar el stock de los nuevos productos
         for (const item of productos) {
-            await Factura.findByIdAndUpdate(item.product, {
-                $inc: { stock: -item.cantidad, ventas:item.cantidad }
+            await Product.findByIdAndUpdate(item.product, {
+                $inc: { stock: -item.cantidad, ventas: item.cantidad }
             })
         }
 
+        // 4) Calcular el total nuevo
+        const totalNew = productos.reduce((acc,item)=> acc+item.precio * item.cantidad, 0)
+
+        // Verifica si totalNew sigue siendo NaN
+if (isNaN(totalNew)) {
+    return res.status(400).json({
+        message: "Error al calcular el total: valores no válidos en los productos",
+        productos
+    });
+}
+
+        // 5) Actualizar la factura en la DB
+        const facturaUpdated = await Factura.findByIdAndUpdate(
+            id,
+            {
+                productos: productos.map((item)=>({
+                    product: item.product,
+                    nombre: item.nombre,
+                    price: Number(item.price || item.precio),
+                    cantidad: Number(item.cantidad)
+                })),
+                total: Number(totalNew),
+                updatedAt: new Date()
+            },
+            {new:true}
+        ).populate('productos.product')
+
         res.status(200).json({
             message: "Factura actualizada correctamente",
-            factura: factura
+            facturaUpdated
         })
 
     } catch (error) {

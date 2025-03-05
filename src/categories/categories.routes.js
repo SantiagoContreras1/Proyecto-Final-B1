@@ -34,7 +34,7 @@ router.delete(
     "/delete/:id",
     [
         validarJWT,
-        check("id", "El nombre es obligatorio").isMongoId(),
+        check("id", "El ID es obligatorio").isMongoId(),
         validarCampos
     ],
     deleteCategory

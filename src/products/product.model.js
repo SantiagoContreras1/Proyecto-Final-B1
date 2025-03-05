@@ -6,10 +6,6 @@ const ProductSchema = Schema({
         type: String,
         required: [true,'El nombre del producto, ingresalo porfa']
     },
-    description:{
-        type: String,
-        required: [true,'El nombre del producto, ingresalo porfa']
-    },
     price:{
         type: Number,
         required: [true,'El precio del producto, ingresalo porfa']
